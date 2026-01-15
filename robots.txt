@@ -1,30 +1,152 @@
+# ==========================================
 # Robots.txt for sudaiskhalid.com
-# AI Engineer Portfolio - Sudais Khalid
+# AI Engineer & Full Stack Developer Portfolio
+# Sudais Khalid - Pakistan | Serving Worldwide
+# ==========================================
+# 
+# Keywords: AI Engineer Pakistan, Machine Learning Expert India,
+# Full Stack Developer, Deep Learning, Computer Vision, NLP,
+# Python Developer, React Developer, Node.js Developer
+#
+# Location: Pakistan | Serving: Pakistan, India, UAE, USA, UK, Worldwide
+# ==========================================
 
+# Allow all crawlers full access
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
-# Allow all major search engine crawlers
+# Google Crawler - Primary Search Engine
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
-User-agent: Bingbot
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+User-agent: Googlebot-News
 Allow: /
 
+User-agent: Googlebot-Video
+Allow: /
+
+# Google Mobile Crawler
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Bing Crawler - Microsoft
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: MSNBot
+Allow: /
+
+# Yahoo Crawler
 User-agent: Slurp
 Allow: /
 
+# DuckDuckGo Crawler
 User-agent: DuckDuckBot
 Allow: /
 
+# Baidu (China) Crawler
 User-agent: Baiduspider
 Allow: /
 
+# Yandex (Russia) Crawler
 User-agent: YandexBot
 Allow: /
+User-agent: YandexImages
+Allow: /assets/images/
 
-# Sitemap location
+# Sogou (China) Crawler
+User-agent: Sogou
+Allow: /
+
+# Naver (Korea) Crawler
+User-agent: Yeti
+Allow: /
+
+# Facebook Crawler - Social Media
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+# Twitter Crawler
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn Crawler
+User-agent: LinkedInBot
+Allow: /
+
+# Pinterest Crawler
+User-agent: Pinterest
+Allow: /
+User-agent: Pinterestbot
+Allow: /
+
+# WhatsApp Preview
+User-agent: WhatsApp
+Allow: /
+
+# Telegram Preview
+User-agent: TelegramBot
+Allow: /
+
+# Apple Crawler
+User-agent: Applebot
+Allow: /
+
+# Amazon Alexa Crawler
+User-agent: ia_archiver
+Allow: /
+
+# SEMrush Crawler (SEO Tool)
+User-agent: SemrushBot
+Allow: /
+
+# Ahrefs Crawler (SEO Tool)
+User-agent: AhrefsBot
+Allow: /
+
+# Moz Crawler (SEO Tool)
+User-agent: rogerbot
+Allow: /
+User-agent: dotbot
+Allow: /
+
+# Majestic Crawler (SEO Tool)
+User-agent: MJ12bot
+Allow: /
+
+# Block bad bots and scrapers
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: AhrefsSiteAudit
+Disallow: /
+
+# ==========================================
+# Sitemap Location
+# ==========================================
 Sitemap: https://sudaiskhalid.com/sitemap.xml
 
-# Host
+# Host Directive
 Host: https://sudaiskhalid.com
+
+# ==========================================
+# Contact: msudaiskhalid.ai@gmail.com
+# Website: https://sudaiskhalid.com
+# LinkedIn: https://linkedin.com/in/sudais-khalid
+# GitHub: https://github.com/muhammadsudaiskhalid
+# ==========================================
