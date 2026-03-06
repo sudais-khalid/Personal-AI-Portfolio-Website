@@ -1,14 +1,14 @@
 # ==========================================
 # Robots.txt for sudaiskhalid.com
-# AI Engineer & Full Stack Developer Portfolio
+# AI/ML Engineer & MERN Stack Developer Portfolio
 # Sudais Khalid - Pakistan | Serving Worldwide
 # ==========================================
-# 
-# Keywords: AI Engineer Pakistan, Machine Learning Expert India,
-# Full Stack Developer, Deep Learning, Computer Vision, NLP,
+#
+# Keywords: AI/ML Engineer, Machine Learning Expert,
+# MERN Stack Developer, Vibe Coding, Deep Learning, Computer Vision, NLP,
 # Python Developer, React Developer, Node.js Developer
 #
-# Location: Pakistan | Serving: Pakistan, India, UAE, USA, UK, Worldwide
+# Location: Pakistan | Serving: UAE, USA, UK, Canada, Australia, Worldwide
 # ==========================================
 
 # Allow all crawlers full access

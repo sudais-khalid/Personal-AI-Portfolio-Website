@@ -6,29 +6,30 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
-  <!-- 
-    Sitemap for Sudais Khalid - AI Engineer & Full Stack Developer Portfolio
-    Location: Pakistan | Serving: Pakistan, India, UAE, USA, UK, Worldwide
-    Keywords: AI Engineer, Machine Learning Expert, Full Stack Developer, Deep Learning, Computer Vision, NLP
+  <!--
+    Sitemap for Sudais Khalid - AI/ML Engineer & MERN Stack Developer Portfolio
+    Location: Pakistan | Serving: UAE, USA, UK, Canada, Australia, Worldwide
+    Keywords: AI/ML Engineer, Machine Learning Expert, MERN Stack Developer, Vibe Coding, Deep Learning, Computer Vision, NLP
   -->
   
-  <!-- Homepage - Highest Priority - AI Engineer & Full Stack Developer Portfolio -->
+  <!-- Homepage - Highest Priority - AI/ML Engineer & MERN Stack Developer Portfolio -->
   <url>
     <loc>https://sudaiskhalid.com/</loc>
-    <lastmod>2026-01-15</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sudaiskhalid.com/"/>
     <xhtml:link rel="alternate" hreflang="en-PK" href="https://sudaiskhalid.com/"/>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://sudaiskhalid.com/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://sudaiskhalid.com/"/>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://sudaiskhalid.com/"/>
     <xhtml:link rel="alternate" hreflang="en-AE" href="https://sudaiskhalid.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://sudaiskhalid.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://sudaiskhalid.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sudaiskhalid.com/"/>
     <image:image>
       <image:loc>https://sudaiskhalid.com/assets/images/og-image.png</image:loc>
-      <image:title>Sudais Khalid - AI Engineer and Full Stack Developer from Pakistan</image:title>
-      <image:caption>Professional AI Engineer and Full Stack Developer offering Machine Learning, Deep Learning, Computer Vision, NLP and Web Development services in Pakistan, India and worldwide</image:caption>
+      <image:title>Sudais Khalid - AI/ML Engineer and MERN Stack Developer from Pakistan</image:title>
+      <image:caption>Professional AI/ML Engineer and MERN Stack Developer offering Machine Learning, Deep Learning, Computer Vision, NLP, Vibe Coding and Web Development services worldwide</image:caption>
       <image:geo_location>Pakistan</image:geo_location>
     </image:image>
   </url>
