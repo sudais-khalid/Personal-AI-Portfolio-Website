@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vibe-ship: Your Code Works. Now Actually Ship It. | Sudais Khalid</title>
+<meta name="description" content="vibe-ship is an open source Claude Code skill by Sudais Khalid that turns any project into a deployable one: multi-stage Dockerfiles, docker-compose, GitHub Actions CI/CD, and a security audit, generated in one pass.">
+<meta name="author" content="Sudais Khalid">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/blog/vibe-ship.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23131211'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' fill='%23edebe6' text-anchor='middle'%3ESk%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#edebe6">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Sudais Khalid">
+<meta property="og:title" content="vibe-ship: Your Code Works. Now Actually Ship It.">
+<meta property="og:description" content="An open source Claude Code skill that generates production Docker, CI/CD, and a security audit for any project in one pass.">
+<meta property="og:url" content="https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/blog/vibe-ship.html">
+<meta property="og:image" content="https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/images/works/vibe-ship.png">
+<meta property="article:published_time" content="2026-07-06">
+<meta property="article:author" content="Sudais Khalid">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "vibe-ship: Your Code Works. Now Actually Ship It.",
+  "description": "An open source Claude Code skill that generates production Docker, CI/CD, and a security audit for any project in one pass.",
+  "image": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/images/works/vibe-ship.png",
+  "datePublished": "2026-07-06",
+  "dateModified": "2026-07-06",
+  "inLanguage": "en",
+  "mainEntityOfPage": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/blog/vibe-ship.html",
+  "author": { "@id": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/#person" },
+  "publisher": { "@id": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/#person" },
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "vibe-ship",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Cross-platform",
+    "url": "https://github.com/sudais-khalid/vibe-ship",
+    "author": { "@id": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/#person" }
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Archivo:wght@400;500;600;700&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #edebe6; color: #131211; font-family: 'Archivo', Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #131211; }
+  nav.site { display: flex; justify-content: space-between; align-items: flex-start; padding: 20px clamp(16px, 3vw, 32px); font-size: 12px; }
+  nav.site .brand { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
+  nav.site .brand .sk { font-family: 'Monsieur La Doulaise', cursive; font-size: 40px; line-height: 0.8; }
+  nav.site .brand .nm { font-size: 11px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; }
+  nav.site .links { display: flex; gap: 24px; padding-top: 8px; }
+  nav.site .links a { text-decoration: none; }
+  nav.site .links a:hover { text-decoration: underline; }
+  article { max-width: 720px; margin: 0 auto; padding: 60px clamp(16px, 4vw, 32px) 40px; }
+  .meta { font-size: 11px; color: #8a877f; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.08em; }
+  h1 { font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(38px, 6vw, 64px); line-height: 1.08; margin: 0 0 36px; }
+  article p { font-size: 15px; line-height: 1.9; margin: 0 0 22px; }
+  article h2 { font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: 26px; margin: 44px 0 16px; }
+  article ul { font-size: 15px; line-height: 1.9; margin: 0 0 22px; padding-left: 20px; }
+  article li { margin-bottom: 8px; }
+  .rule { border-top: 1px solid #131211; margin-bottom: 28px; }
+  .cover { margin: 0 0 40px; aspect-ratio: 16 / 9; overflow: hidden; background: #23211e; }
+  .cover img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(0.2); }
+  pre { background: #23211e; color: #edebe6; font-size: 13px; line-height: 1.7; padding: 18px 22px; overflow-x: auto; margin: 0 0 22px; }
+  code { font-family: Consolas, Monaco, monospace; }
+  p code { background: #dedbd3; padding: 1px 6px; font-size: 13px; }
+  .cta { display: inline-block; font-size: 12px; text-decoration: none; border: 1px solid #131211; border-radius: 999px; padding: 10px 24px; margin: 8px 0 22px; }
+  .cta:hover { background: #131211; color: #edebe6; }
+  .byline { display: flex; gap: 14px; align-items: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid #c8c5bd; }
+  .byline img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; object-position: 50% 20%; }
+  .byline .who { font-size: 12px; line-height: 1.6; color: #55534e; }
+  .byline .who strong { color: #131211; }
+  footer.site { max-width: 720px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 40px clamp(16px, 4vw, 32px) 24px; font-size: 11px; color: #8a877f; }
+  footer.site a { text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav class="site">
+  <a class="brand" href="../index.html">
+    <span class="sk">Sk</span>
+    <span class="nm">Sudais Khalid</span>
+  </a>
+  <div class="links">
+    <a href="../index.html">Home</a>
+    <a href="../blog.html">Journal</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<article>
+  <div class="rule"></div>
+  <div class="meta">Tooling · July 6, 2026 · Sudais Khalid</div>
+  <h1>vibe-ship: Your Code Works. Now Actually Ship It.</h1>
+
+  <div class="cover"><img src="../images/works/vibe-ship.png" alt="vibe-ship, an open source deployment skill for Claude Code by Sudais Khalid"></div>
+
+  <p>There is a new kind of developer in the world. They describe what they want, an AI writes most of the code, and twenty minutes later something real is running on localhost. People call it vibe coding, and honestly, I love it. More people building things is a win, full stop.</p>
+
+  <p>But I kept noticing where the story ends. It ends at localhost. The app works, the screenshot goes in the group chat, and then comes the question that kills the momentum: "how do I put this online?" Suddenly the vibe coder is staring at Dockerfile syntax, GitHub Actions YAML, and a Stack Overflow thread from 2019. Most projects do not survive that night.</p>
+
+  <p>vibe-ship exists for that exact moment.</p>
+
+  <h2>What it actually does</h2>
+
+  <p>vibe-ship is an open source skill for Claude Code. You install it once, and from then on you just say what you mean: "dockerize this app" or "make this production-ready." The skill activates on its own, reads your codebase, works out what stack you are running, and generates the entire deployment layer in one pass:</p>
+
+  <ul>
+    <li>A multi-stage <code>Dockerfile</code> tuned to your stack, not a generic template</li>
+    <li>A <code>docker-compose.yml</code> that already knows about your database and services</li>
+    <li>A GitHub Actions workflow for CI/CD</li>
+    <li>An <code>.env.example</code> so your secrets stay out of the repo</li>
+    <li>Kubernetes manifests, if you ask for them</li>
+  </ul>
+
+  <p>It auto-detects Node, Python, Go, Java and Kotlin, Ruby, Rust, PHP, and plain static frontends. No config file, no wizard with twelve questions. It looks at what you built and meets you there.</p>
+
+  <h2>The part I am most proud of</h2>
+
+  <p>Generating files is only half the job. The half nobody does is checking the setup you already have. vibe-ship ships with a standalone security auditor, a Python script that statically analyzes your Docker and CI configuration and flags the classic mistakes: containers running as root, secrets baked into images, missing health checks. It does not even need Docker installed to run, and it will happily audit files it did not create.</p>
+
+  <p>That was a deliberate design rule from day one: generate working files, never checklists. A checklist tells you that you have homework. A working file means the homework is done and you are reviewing it instead of writing it. The difference sounds small. In practice it is the difference between shipping tonight and shipping never.</p>
+
+  <h2>Try it in one minute</h2>
+
+  <p>If you use Claude Code, this is the fastest route:</p>
+
+  <pre><code>/plugin marketplace add sudais-khalid/vibe-ship
+/plugin install vibe-ship@vibe-ship</code></pre>
+
+  <p>Then open any project and say "make this production-ready." That is the whole tutorial. The repo has manual install options too, including one for claude.ai.</p>
+
+  <a class="cta" href="https://github.com/sudais-khalid/vibe-ship" target="_blank" rel="noopener">vibe-ship on GitHub →</a>
+
+  <p>It is MIT licensed, and the roadmap is open. If it saves your project from dying on localhost, tell me about it. If it breaks on your weird monorepo, tell me even faster. Shipped tools get better because real people run them on real code, and that feedback loop is the entire reason I publish my work instead of keeping it in a folder.</p>
+
+  <p>Ideas are cheap until shipped. This one is shipped. Your move.</p>
+
+  <div class="byline">
+    <img src="../images/sudais.jpeg" alt="Sudais Khalid">
+    <div class="who"><strong>Sudais Khalid</strong> is an AI/ML engineer and community builder in Islamabad, Pakistan. He is the originator of the AI Innovation Society and builds AI products designed to be used, not just demonstrated.</div>
+  </div>
+</article>
+
+<footer class="site">
+  <span>© 2026 Sudais Khalid</span>
+  <span><a href="../blog.html">← All posts</a></span>
+</footer>
+
+</body>
+</html>
