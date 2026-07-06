@@ -1,152 +1,28 @@
-# ==========================================
-# Robots.txt for sudaiskhalid.com
-# AI/ML Engineer & MERN Stack Developer Portfolio
-# Sudais Khalid - Pakistan | Serving Worldwide
-# ==========================================
-#
-# Keywords: AI/ML Engineer, Machine Learning Expert,
-# MERN Stack Developer, Vibe Coding, Deep Learning, Computer Vision, NLP,
-# Python Developer, React Developer, Node.js Developer
-#
-# Location: Pakistan | Serving: UAE, USA, UK, Canada, Australia, Worldwide
-# ==========================================
+# robots.txt — Sudais Khalid, AI & ML Engineer
+# https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/
 
-# Allow all crawlers full access
+# All search engine crawlers: full access
 User-agent: *
 Allow: /
-Crawl-delay: 1
 
-# Google Crawler - Primary Search Engine
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Googlebot-Image
-Allow: /assets/images/
-
-User-agent: Googlebot-News
+# AI search & answer engines: explicitly allowed
+# (visibility in ChatGPT, Claude, Perplexity, Gemini answers)
+User-agent: GPTBot
 Allow: /
 
-User-agent: Googlebot-Video
+User-agent: OAI-SearchBot
 Allow: /
 
-# Google Mobile Crawler
-User-agent: Googlebot-Mobile
+User-agent: ClaudeBot
 Allow: /
 
-# Bing Crawler - Microsoft
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: MSNBot
+User-agent: Claude-SearchBot
 Allow: /
 
-# Yahoo Crawler
-User-agent: Slurp
+User-agent: PerplexityBot
 Allow: /
 
-# DuckDuckGo Crawler
-User-agent: DuckDuckBot
+User-agent: Google-Extended
 Allow: /
 
-# Baidu (China) Crawler
-User-agent: Baiduspider
-Allow: /
-
-# Yandex (Russia) Crawler
-User-agent: YandexBot
-Allow: /
-User-agent: YandexImages
-Allow: /assets/images/
-
-# Sogou (China) Crawler
-User-agent: Sogou
-Allow: /
-
-# Naver (Korea) Crawler
-User-agent: Yeti
-Allow: /
-
-# Facebook Crawler - Social Media
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Facebot
-Allow: /
-
-# Twitter Crawler
-User-agent: Twitterbot
-Allow: /
-
-# LinkedIn Crawler
-User-agent: LinkedInBot
-Allow: /
-
-# Pinterest Crawler
-User-agent: Pinterest
-Allow: /
-User-agent: Pinterestbot
-Allow: /
-
-# WhatsApp Preview
-User-agent: WhatsApp
-Allow: /
-
-# Telegram Preview
-User-agent: TelegramBot
-Allow: /
-
-# Apple Crawler
-User-agent: Applebot
-Allow: /
-
-# Amazon Alexa Crawler
-User-agent: ia_archiver
-Allow: /
-
-# SEMrush Crawler (SEO Tool)
-User-agent: SemrushBot
-Allow: /
-
-# Ahrefs Crawler (SEO Tool)
-User-agent: AhrefsBot
-Allow: /
-
-# Moz Crawler (SEO Tool)
-User-agent: rogerbot
-Allow: /
-User-agent: dotbot
-Allow: /
-
-# Majestic Crawler (SEO Tool)
-User-agent: MJ12bot
-Allow: /
-
-# Block bad bots and scrapers
-User-agent: MegaIndex
-Disallow: /
-
-User-agent: BLEXBot
-Disallow: /
-
-User-agent: SemrushBot-SA
-Disallow: /
-
-User-agent: AhrefsSiteAudit
-Disallow: /
-
-# ==========================================
-# Sitemap Location
-# ==========================================
-Sitemap: https://sudaiskhalid.com/sitemap.xml
-
-# Host Directive
-Host: https://sudaiskhalid.com
-
-# ==========================================
-# Contact: msudaiskhalid.ai@gmail.com
-# Website: https://sudaiskhalid.com
-# LinkedIn: https://linkedin.com/in/sudais-khalid
-# GitHub: https://github.com/muhammadsudaiskhalid
-# ==========================================
+Sitemap: https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/sitemap.xml
