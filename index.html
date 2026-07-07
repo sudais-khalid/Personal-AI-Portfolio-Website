@@ -8,7 +8,9 @@
 <meta name="author" content="Sudais Khalid">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23131211'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' fill='%23edebe6' text-anchor='middle'%3ESk%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon.png" sizes="180x180">
+<link rel="apple-touch-icon" href="favicon.png">
 <meta name="theme-color" content="#edebe6">
 
 <!-- Open Graph (link previews: LinkedIn, WhatsApp, Facebook) -->
@@ -45,7 +47,8 @@
       "sameAs": [
         "https://www.linkedin.com/in/sudais-khalid/",
         "https://github.com/sudais-khalid",
-        "https://instagram.com/sudais.aie/"
+        "https://instagram.com/sudais.aie/",
+        "https://www.facebook.com/profile.php?id=61576218846637"
       ],
       "founder": { "@type": "Organization", "name": "AI Innovation Society" }
     },
@@ -61,7 +64,7 @@
   ]
 }
 </script>
-<script src="./support.js"></script>
+<script src="./support.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -72,6 +75,18 @@
   <style>
     body { margin: 0; background: #edebe6; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    img { max-width: 100%; }
+    @media (max-width: 760px) {
+      body { cursor: auto; }
+      nav a, nav div { font-size: 13px; }
+      header#top { min-height: 88vh; padding-top: 170px; }
+    }
+    @media (max-width: 480px) {
+      section { padding-top: 70px; padding-bottom: 70px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
   </style>
 </helmet>
 
@@ -193,7 +208,7 @@
   <!-- ============ WORKS ============ -->
   <section id="works" style="padding: 100px clamp(16px, 4vw, 32px); max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="Works">
     <h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(48px, 7.5vw, 110px); line-height: 1; text-transform: uppercase;">Works</h2>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 48px;">Moments &amp; highlights</div>
+    <div style="font-size: 11px; color: #8a877f; margin-bottom: 48px;">AI &amp; machine learning projects</div>
 
     <div style="display: flex; flex-wrap: wrap; gap: 14px clamp(16px, 3vw, 32px); margin-bottom: 40px; border-bottom: 1px solid #c8c5bd; padding-bottom: 14px;">
       <sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
@@ -261,7 +276,7 @@
   <!-- ============ JOURNAL (blog teaser) ============ -->
   <section id="journal" style="padding: 100px clamp(16px, 4vw, 32px); max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="Journal">
     <h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(48px, 7.5vw, 110px); line-height: 1; text-transform: uppercase;">Journal</h2>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 64px;">Notes from the workshop</div>
+    <div style="font-size: 11px; color: #8a877f; margin-bottom: 64px;">Essays on AI engineering &amp; shipping</div>
 
     <div style="border-top: 1px solid #131211;">
       <a href="blog/vibe-ship.html" style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap; padding: 28px 0; border-bottom: 1px solid #c8c5bd; color: #131211; text-decoration: none;">
@@ -336,6 +351,7 @@
         <a href="https://www.linkedin.com/in/sudais-khalid/" target="_blank" rel="noopener" style="color: #131211; text-decoration: none;">LinkedIn</a>
         <a href="https://github.com/sudais-khalid" target="_blank" rel="noopener" style="color: #131211; text-decoration: none;">GitHub</a>
         <a href="http://instagram.com/sudais.aie/" target="_blank" rel="noopener" style="color: #131211; text-decoration: none;">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61576218846637" target="_blank" rel="noopener" style="color: #131211; text-decoration: none;">Facebook</a>
         <a href="https://wa.me/923185133092" target="_blank" rel="noopener" style="color: #131211; text-decoration: none;">WhatsApp</a>
       </div>
     </footer>
@@ -618,10 +634,10 @@ class Component extends DCLogic {
       dotRef: this.dotRef,
       ringRef: this.ringRef,
       values: [
-        { num: '01', title: 'Build things that work in the real world, not just in a notebook', photo: 'images/working.jpeg', photoStyle: valuePhoto('images/working.jpeg', 'cover', '50% 50%'), wrapStyle: wrapStyle(0) },
-        { num: '02', title: "Share what you learn: every session is someone else's shortcut", photo: 'images/speaking.png', photoStyle: valuePhoto('images/speaking.png', '160%', '40% 32%'), wrapStyle: wrapStyle(1) },
-        { num: '03', title: 'Move fast without lowering the standard', photo: 'images/dhs-certificate.jpg', photoStyle: valuePhoto('images/dhs-certificate.jpg', '210%', '50% 42%'), wrapStyle: wrapStyle(2) },
-        { num: '04', title: 'Stay curious past the edge of what you already know', photo: 'images/desk.png', photoStyle: valuePhoto('images/desk.png', '165%', '62% 55%'), wrapStyle: wrapStyle(3) }
+        { num: '01', title: 'Build things that work in the real world, not just in a notebook', photo: 'images/working.webp', photoStyle: valuePhoto('images/working.webp', 'cover', '50% 50%'), wrapStyle: wrapStyle(0) },
+        { num: '02', title: "Share what you learn: every session is someone else's shortcut", photo: 'images/speaking.webp', photoStyle: valuePhoto('images/speaking.webp', '160%', '40% 32%'), wrapStyle: wrapStyle(1) },
+        { num: '03', title: 'Move fast without lowering the standard', photo: 'images/dhs-certificate.webp', photoStyle: valuePhoto('images/dhs-certificate.webp', '210%', '50% 42%'), wrapStyle: wrapStyle(2) },
+        { num: '04', title: 'Stay curious past the edge of what you already know', photo: 'images/desk.webp', photoStyle: valuePhoto('images/desk.webp', '165%', '62% 55%'), wrapStyle: wrapStyle(3) }
       ],
       chapters: [
         {
