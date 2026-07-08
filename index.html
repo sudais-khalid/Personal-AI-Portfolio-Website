@@ -80,13 +80,23 @@
     body { margin: 0; background: #edebe6; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
     img { max-width: 100%; }
+    .storygrid { display: grid; grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 699px) {
+      .storygrid { grid-template-columns: 1fr; }
+      .storycard { padding: 32px 0 36px !important; }
+    }
     @media (max-width: 760px) {
       body { cursor: auto; }
+      nav { gap: 20px !important; }
       nav a, nav div { font-size: 13px; }
       header#top { min-height: 88vh; padding-top: 170px; }
+      #contact a[href^="mailto"] { word-break: break-word; }
     }
     @media (max-width: 480px) {
       section { padding-top: 70px; padding-bottom: 70px; }
+      header#top { padding-top: 150px; }
+      .storycard { padding: 26px 0 30px !important; }
+      .hero-title { font-size: 15vw !important; }
     }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation: none !important; transition: none !important; }
@@ -96,6 +106,8 @@
     .jrow:hover > span:last-child { color: #131211 !important; }
     .allposts { transition: background 0.25s ease, color 0.25s ease; }
     .allposts:hover { background: #131211; color: #edebe6 !important; }
+    .hubbtn { transition: background 0.25s ease; }
+    .hubbtn:hover { background: #a8a49b !important; }
   </style>
 </helmet>
 
@@ -135,8 +147,8 @@
     </div>
     <h1 style="margin: 0; font-weight: 400; animation: fadeUp 0.9s ease 0.15s both;">
       <span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;">Sudais Khalid, AI and ML Engineer in Islamabad, Pakistan.</span>
-      <span style="display: block; font-family: 'Libre Caslon Display', serif; font-size: clamp(60px, 10.5vw, 170px); line-height: 0.98; letter-spacing: 0.01em; text-transform: uppercase;">Ideas Are Cheap</span>
-      <span style="display: block; font-family: 'Libre Caslon Display', serif; font-size: clamp(60px, 10.5vw, 170px); line-height: 0.98; letter-spacing: 0.01em; text-transform: uppercase; text-align: right;">Until Shipped</span>
+      <span class="hero-title" style="display: block; font-family: 'Libre Caslon Display', serif; font-size: clamp(60px, 10.5vw, 170px); line-height: 0.98; letter-spacing: 0.01em; text-transform: uppercase;">Ideas Are Cheap</span>
+      <span class="hero-title" style="display: block; font-family: 'Libre Caslon Display', serif; font-size: clamp(60px, 10.5vw, 170px); line-height: 0.98; letter-spacing: 0.01em; text-transform: uppercase; text-align: right;">Until Shipped</span>
     </h1>
   </header>
 
@@ -193,9 +205,9 @@
     <h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(48px, 7.5vw, 110px); line-height: 1; text-transform: uppercase;">The Story</h2>
     <div style="font-size: 11px; color: #8a877f; margin-bottom: 64px;">Four chapters</div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); border-top: 1px solid #131211;">
+    <div class="storygrid" style="border-top: 1px solid #131211;">
       <sc-for list="{{ chapters }}" as="ch" hint-placeholder-count="4">
-        <div style="padding: 48px 40px 56px 0; border-bottom: 1px solid #c8c5bd; box-sizing: border-box;">
+        <div class="storycard" style="padding: 48px 40px 56px 0; border-bottom: 1px solid #c8c5bd; box-sizing: border-box;">
           <div style="font-family: 'Libre Caslon Display', serif; font-size: 32px; margin-bottom: 20px;">{{ ch.num }}</div>
           <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 24px; flex-wrap: wrap;">
             <h3 style="margin: 0; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: 30px;">{{ ch.title }}</h3>
@@ -236,6 +248,18 @@
           <div style="font-size: 11px; line-height: 1.6; color: #55534e; margin-top: 3px;">{{ w.desc }}</div>
         </div>
       </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED: VIBE-SHIP ============ -->
+  <section style="padding: 0 clamp(16px, 4vw, 32px) 100px; max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="Featured: vibe-ship">
+    <div style="background: #23211e; color: #edebe6; padding: clamp(40px, 6vw, 72px); display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap;">
+      <div style="max-width: 640px;">
+        <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: #a8a49b; margin-bottom: 16px;">Now live on Claude Plugin Hub</div>
+        <div style="font-family: 'Libre Caslon Display', serif; font-size: clamp(28px, 4vw, 44px); line-height: 1.15; margin-bottom: 16px;">vibe-ship ships your code, not just your idea.</div>
+        <p style="margin: 0; font-size: 13px; line-height: 1.8; color: #c8c5bd;">The Claude Code skill that generates production Docker, CI/CD, and a security audit for any project in one pass is now listed on the Claude Plugin Hub. Install it in one command and stop dying on localhost.</p>
+      </div>
+      <a class="hubbtn" href="https://www.claudepluginhub.com/plugins/sudais-khalid-vibe-ship" target="_blank" rel="noopener" style="flex-shrink: 0; display: inline-block; font-size: 13px; color: #131211; background: #edebe6; text-decoration: none; border-radius: 999px; padding: 14px 30px; white-space: nowrap;">View on Plugin Hub ↗</a>
     </div>
   </section>
 
