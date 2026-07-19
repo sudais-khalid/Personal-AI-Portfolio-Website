@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shipped, Not Submitted: Three AI Projects from Semester Six | Sudais Khalid</title>
+<meta name="description" content="Sudais Khalid breaks down his three semester six projects: SlotWright, a reinforcement learning event scheduler, NoteSync, a from-scratch bilingual NLP pipeline, and FaceFind, a privacy-first face search engine live on Azure.">
+<meta name="author" content="Sudais Khalid">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://sudaiskhalid.com/blog/semester-six-shipped.html">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="../favicon.png" sizes="180x180">
+<link rel="apple-touch-icon" href="../favicon.png">
+<meta name="theme-color" content="#edebe6">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Sudais Khalid">
+<meta property="og:title" content="Shipped, Not Submitted: Three AI Projects from Semester Six">
+<meta property="og:description" content="A reinforcement learning scheduler, a from-scratch bilingual NLP pipeline, and a privacy-first face search engine running live on Azure. What one semester looks like when every project has to survive production.">
+<meta property="og:url" content="https://sudaiskhalid.com/blog/semester-six-shipped.html">
+<meta property="og:image" content="https://sudaiskhalid.com/images/og/semester-six.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="article:published_time" content="2026-07-19">
+<meta property="article:author" content="Sudais Khalid">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Shipped, Not Submitted: Three AI Projects from Semester Six",
+  "description": "A reinforcement learning scheduler, a from-scratch bilingual NLP pipeline, and a privacy-first face search engine running live on Azure.",
+  "image": "https://sudaiskhalid.com/images/og/semester-six.jpg",
+  "datePublished": "2026-07-19",
+  "dateModified": "2026-07-19",
+  "inLanguage": "en",
+  "mainEntityOfPage": "https://sudaiskhalid.com/blog/semester-six-shipped.html",
+  "author": { "@id": "https://sudaiskhalid.com/#person" },
+  "publisher": { "@id": "https://sudaiskhalid.com/#person" },
+  "about": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "SlotWright",
+      "description": "A reinforcement learning agent that schedules university events using a Gymnasium environment modeled as a Markov Decision Process.",
+      "codeRepository": "https://github.com/sudais-khalid/slotwright",
+      "programmingLanguage": "Python",
+      "author": { "@id": "https://sudaiskhalid.com/#person" }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "NoteSync",
+      "description": "A lecture note-taking app with a from-scratch bilingual NLP pipeline in Node.js: tokenization, POS tagging, TF-IDF scoring, NER, and readability analysis with Urdu support.",
+      "codeRepository": "https://github.com/sudais-khalid/NoteSync",
+      "programmingLanguage": "JavaScript",
+      "author": { "@id": "https://sudaiskhalid.com/#person" }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "FaceFind",
+      "description": "A privacy-first face search engine using ArcFace embeddings via ONNX Runtime and FAISS vector search, deployed on Azure.",
+      "codeRepository": "https://github.com/sudais-khalid/FaceFind",
+      "programmingLanguage": "Python",
+      "author": { "@id": "https://sudaiskhalid.com/#person" }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Archivo:wght@400;500;600;700&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Archivo:wght@400;500;600;700&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet"></noscript>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #edebe6; color: #131211; font-family: 'Archivo', Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #131211; }
+  nav.site { display: flex; justify-content: space-between; align-items: flex-start; padding: 20px clamp(16px, 3vw, 32px); font-size: 12px; }
+  nav.site .brand { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
+  nav.site .brand .sk { font-family: 'Monsieur La Doulaise', cursive; font-size: 40px; line-height: 0.8; }
+  nav.site .brand .nm { font-size: 11px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; }
+  nav.site .links { display: flex; gap: 24px; padding-top: 8px; }
+  nav.site .links a { text-decoration: none; display: inline-block; padding: 8px 2px; }
+  nav.site .links a:hover { text-decoration: underline; }
+  article { max-width: 720px; margin: 0 auto; padding: 60px clamp(16px, 4vw, 32px) 40px; }
+  .meta { font-size: 11px; color: #66635d; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.08em; }
+  h1 { font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(38px, 6vw, 64px); line-height: 1.08; margin: 0 0 36px; }
+  article p { font-size: 15px; line-height: 1.9; margin: 0 0 22px; }
+  article h2 { font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: 26px; margin: 44px 0 16px; }
+  article h3 { font-size: 14px; font-weight: 600; margin: 30px 0 10px; text-transform: uppercase; letter-spacing: 0.06em; }
+  article ul { font-size: 15px; line-height: 1.9; margin: 0 0 22px; padding-left: 20px; }
+  article li { margin-bottom: 8px; }
+  .rule { border-top: 1px solid #131211; margin-bottom: 28px; }
+  .cover { margin: 0 0 40px; aspect-ratio: 16 / 9; overflow: hidden; background: #edebe6; border: 1px solid #c8c5bd; }
+  .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  blockquote { margin: 36px 0; padding: 0 0 0 24px; border-left: 2px solid #131211; font-family: 'Libre Caslon Display', serif; font-size: 22px; line-height: 1.5; color: #131211; }
+  p code, li code { font-family: Consolas, Monaco, monospace; background: #dedbd3; padding: 1px 6px; font-size: 13px; }
+  .cta { display: inline-block; font-size: 12px; text-decoration: none; border: 1px solid #131211; border-radius: 999px; padding: 10px 24px; margin: 4px 10px 12px 0; }
+  .cta:hover { background: #131211; color: #edebe6; }
+  .byline { display: flex; gap: 14px; align-items: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid #c8c5bd; }
+  .byline img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; object-position: 50% 20%; }
+  .byline .who { font-size: 12px; line-height: 1.6; color: #55534e; }
+  .byline .who strong { color: #131211; }
+  footer.site { max-width: 720px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 40px clamp(16px, 4vw, 32px) 24px; font-size: 11px; color: #66635d; }
+  footer.site a { text-decoration: none; }
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1058056280503226');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<nav class="site">
+  <a class="brand" href="../index.html">
+    <span class="sk">Sk</span>
+    <span class="nm">Sudais Khalid</span>
+  </a>
+  <div class="links">
+    <a href="../index.html">Home</a>
+    <a href="../blog.html">Journal</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<article role="main">
+  <div class="rule"></div>
+  <div class="meta">Projects · July 19, 2026 · Sudais Khalid</div>
+  <h1>Shipped, Not Submitted: Three AI Projects from Semester Six</h1>
+
+  <div class="cover"><img src="../images/semester-six.jpg" alt="Shipped, not submitted: SlotWright, NoteSync, and FaceFind, three semester six projects by Sudais Khalid"></div>
+
+  <p>Semester six is over, and I want to write down what it produced while the lessons are still fresh. Three projects, three different corners of AI: a reinforcement learning agent, a from-scratch NLP pipeline, and a computer vision system that is running live on Azure right now. Each one started with a real annoyance, not an assignment brief, and each one had to survive contact with production before I called it done.</p>
+
+  <p>I have <a href="build-something-real.html">written before</a> about why students should stop recycling to-do apps and solve problems they have actually felt. This semester was me holding myself to that standard. Here is how it went.</p>
+
+  <h2>SlotWright: teaching an RL agent to schedule university events</h2>
+
+  <p>The problem is one every student recognizes. Universities schedule events by hand, and it shows. Venues get double-booked. Events land in the middle of finals week. A society books a seminar hall at 2 PM and wonders why nobody came, when half the target students had a lab at that exact hour.</p>
+
+  <p>Scheduling under competing constraints is exactly the shape of problem reinforcement learning is built for, so I built SlotWright. The environment runs on Gymnasium, modeled as a Markov Decision Process: for each incoming event, the agent's action is a triple of day, time slot, and venue. The state captures the current calendar, venue availability, and the timetables of the target student group.</p>
+
+  <p>The part I find most interesting is the dual constraint check. A slot is only considered valid if two independent conditions hold at once: the venue must be free, and the common free time across the target students' timetables must be high. Either one alone is easy. Enforcing both simultaneously is where manual scheduling falls apart, and it is exactly what the agent learns to navigate.</p>
+
+  <p>The reward function encodes everything a good human scheduler intuitively knows. Placements during exam weeks are penalized. Overlaps with lectures are penalized. Booking a 300-seat auditorium for a 30-person workshop is penalized. Slots where the target audience is actually free, in a venue that fits the expected crowd, are rewarded. Training runs over repeated episodes until the learned policy consistently beats two baselines: a random scheduler and a rule-based one. If your RL agent cannot beat a handful of if-statements, you do not have an RL project, you have a very slow random number generator. SlotWright beats both.</p>
+
+  <h2>NoteSync: an NLP pipeline with nothing hidden inside an API call</h2>
+
+  <p>NoteSync records lectures and turns them into annotated study notes. That description could apply to a dozen apps, so here is what makes ours different: the entire NLP stack is built from scratch in Node.js. No Python microservices behind the scenes, and no quietly outsourcing all the understanding to an LLM.</p>
+
+  <p>The pipeline tokenizes the transcript, POS-tags it, scores sentences with TF-IDF to find what matters, extracts named entities with exact character offsets, detects definitions through pattern matching, and computes Flesch-Kincaid readability with a formula we wrote by hand. Gemini exists in the system, but it is optional and deliberately caged: it can polish wording, and that is all. It cannot replace or override any analytical result. If the pipeline says a sentence is important, that judgment came from math we can read and test, not from a black box.</p>
+
+  <p>The hardest engineering was Urdu support, and it taught me a lesson about silent failure. The stock TF-IDF tokenizer was dropping all Arabic script without a single error or warning. Urdu text went in, nothing came out, and every downstream metric just quietly pretended the Urdu half of a bilingual lecture did not exist. We fixed it with a bilingual regex that matches both Latin and Arabic script runs. Then came the subtle one: the Urdu full stop is its own character, <code>U+06D4</code>, and sentence splitting on it would have shifted every character position. We handled it with a same-length character copy, so every highlight in the notes still maps to the exact right offset in the raw transcript.</p>
+
+  <p>The final tally: 81 automated tests, Docker, and a GitHub Actions CI/CD pipeline. Built over one semester with Muhammad Farooq Khan, who deserves half of every good decision in that codebase.</p>
+
+  <h2>FaceFind: find yourself in 400 photos without scrolling</h2>
+
+  <p>This one started with twenty wasted minutes. After an event, I scrolled through 400 photos in a shared album just to find the 8 pictures I appeared in. Everyone does this after every event, and everyone hates it. So I built something about it.</p>
+
+  <p>FaceFind lets you scan your face once through your webcam, then retrieves every photo and video you appear in from a Google Drive album. Nobody else's photos. Just yours.</p>
+
+  <p>The retrieval engine is the part I am most proud of. ArcFace ResNet-100, running locally through ONNX Runtime, converts a face into a 512-dimensional embedding vector. At enrollment we capture 7 frames and average their embeddings, which gives a far more stable probe than any single frame. That probe is searched against a FAISS index built from every face detected in the album, and results come back in milliseconds.</p>
+
+  <p>Privacy was a design constraint from day one, not a paragraph added at the end. Your face is never stored as an image. The system keeps only an AES-256-GCM encrypted embedding, scoped uniquely to you and that specific event. There is nothing to leak that could reconstruct your face, and nothing that follows you across events.</p>
+
+  <p>It is deployed live on Azure with 3,252 faces indexed across 299 photos, behind a full Docker and GitHub Actions CI/CD pipeline. It broke in production twice. We shipped anyway, fixed it in the open, and both failures made the system better than any amount of pre-launch polishing would have.</p>
+
+  <blockquote>A semester project you demo once is homework. A semester project that survives strangers using it is a product.</blockquote>
+
+  <h2>The thread running through all three</h2>
+
+  <p>Every one of these projects was deployed with <a href="vibe-ship.html">vibe-ship</a>, my open source Claude Code plugin that generates the entire production setup: Dockerfiles, CI/CD workflows, and security auditing in one pass. Having a tool you built yourself, that knows exactly how you like to ship, is genuinely a superpower. It turned the worst part of every project into the fastest part, and it saved hours on each build.</p>
+
+  <p>All three projects are open source and open for contributions. If you work on reinforcement learning, NLP, computer vision, vector search, or privacy systems, there is a place for you in these repos:</p>
+
+  <a class="cta" href="https://github.com/sudais-khalid/slotwright" target="_blank" rel="noopener">SlotWright on GitHub →</a>
+  <a class="cta" href="https://github.com/sudais-khalid/NoteSync" target="_blank" rel="noopener">NoteSync on GitHub →</a>
+  <a class="cta" href="https://github.com/sudais-khalid/FaceFind" target="_blank" rel="noopener">FaceFind on GitHub →</a>
+
+  <p>And if you are a student staring down your own semester projects, wondering whether to play it safe: pick the problem that annoys you personally, build it like someone will actually use it, and ship it before it feels ready. That discomfort is the entire education. If you want to talk through an idea, <a href="../index.html#contact">reach out</a>. My door stays open.</p>
+
+  <div class="byline">
+    <img src="../images/sudais.jpeg" alt="Sudais Khalid" loading="lazy">
+    <div class="who"><strong>Sudais Khalid</strong> is an AI/ML engineer and community builder in Islamabad, Pakistan. He is the originator of the AI Innovation Society and builds AI products designed to be used, not just demonstrated.</div>
+  </div>
+</article>
+
+<footer class="site">
+  <span>© 2026 Sudais Khalid</span>
+  <span><a href="../blog.html">← All posts</a></span>
+</footer>
+
+</body>
+</html>
