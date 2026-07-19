@@ -1,5 +1,5 @@
 # robots.txt — Sudais Khalid, AI & ML Engineer
-# https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/
+# https://sudaiskhalid.com/
 
 # All search engine crawlers: full access
 User-agent: *
@@ -25,4 +25,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/sitemap.xml
+Sitemap: https://sudaiskhalid.com/sitemap.xml

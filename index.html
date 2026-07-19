@@ -7,19 +7,24 @@
 <meta name="description" content="AI/ML engineer and community builder in Islamabad, Pakistan. Applied machine learning, computer vision, and NLP products. Originator of the AI Innovation Society.">
 <meta name="author" content="Sudais Khalid">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/">
+<link rel="canonical" href="https://sudaiskhalid.com/">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" type="image/png" href="favicon.png" sizes="180x180">
 <link rel="apple-touch-icon" href="favicon.png">
 <meta name="theme-color" content="#edebe6">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Archivo:wght@400;500;600;700&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Archivo:wght@400;500;600;700&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet"></noscript>
 
 <!-- Open Graph (link previews: LinkedIn, WhatsApp, Facebook) -->
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Sudais Khalid">
 <meta property="og:title" content="Sudais Khalid — AI &amp; ML Engineer | Computer Vision &amp; NLP">
 <meta property="og:description" content="Applied AI, built to be used. Machine learning, computer vision, and NLP products — plus the AI Innovation Society community. The story, told in chapters.">
-<meta property="og:url" content="https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/">
-<meta property="og:image" content="https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/images/og-image.jpg">
+<meta property="og:url" content="https://sudaiskhalid.com/">
+<meta property="og:image" content="https://sudaiskhalid.com/images/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpeg">
@@ -30,7 +35,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sudais Khalid — AI &amp; ML Engineer | Computer Vision &amp; NLP">
 <meta name="twitter:description" content="Applied AI, built to be used. ML, computer vision, and NLP products — plus the AI Innovation Society community.">
-<meta name="twitter:image" content="https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/images/og-image.jpg">
+<meta name="twitter:image" content="https://sudaiskhalid.com/images/og-image.jpg">
 
 <!-- Structured data: entity signals for Google & AI search engines (E-E-A-T / GEO) -->
 <script type="application/ld+json">
@@ -39,10 +44,10 @@
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/#person",
+      "@id": "https://sudaiskhalid.com/#person",
       "name": "Sudais Khalid",
-      "url": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/",
-      "image": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/images/sudais.jpeg",
+      "url": "https://sudaiskhalid.com/",
+      "image": "https://sudaiskhalid.com/images/sudais.jpeg",
       "jobTitle": "AI & ML Engineer",
       "description": "AI/ML engineer and community builder working across machine learning, deep learning, computer vision, and NLP. Originator of the AI Innovation Society.",
       "email": "mailto:msudaiskhalid.ai@gmail.com",
@@ -58,12 +63,12 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/#website",
-      "url": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/",
+      "@id": "https://sudaiskhalid.com/#website",
+      "url": "https://sudaiskhalid.com/",
       "name": "Sudais Khalid — AI & ML Engineer",
       "description": "Personal portfolio and story of Sudais Khalid: applied AI projects, principles, and the AI Innovation Society.",
       "inLanguage": "en",
-      "publisher": { "@id": "https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/#person" }
+      "publisher": { "@id": "https://sudaiskhalid.com/#person" }
     }
   ]
 }
@@ -90,9 +95,6 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
 <body>
 <x-dc>
 <helmet>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Archivo:wght@400;500;600;700&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
   <style>
     body { margin: 0; background: #edebe6; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
@@ -125,6 +127,8 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
     .allposts:hover { background: #131211; color: #edebe6 !important; }
     .hubbtn { transition: background 0.25s ease; }
     .hubbtn:hover { background: #a8a49b !important; }
+    nav a { display: inline-block; padding: 5px 0; }
+    footer a { display: inline-block; padding: 4px 0; }
   </style>
 </helmet>
 
@@ -135,7 +139,7 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
   <div ref="{{ ringRef }}" style="position: fixed; top: 0; left: 0; z-index: 100; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #131211; pointer-events: none; opacity: 0; transform: translate(-50%, -50%) scale(1); transition: opacity 0.2s ease, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), background 0.25s ease;"></div>
   <div ref="{{ cursorRef }}" style="position: fixed; top: 0; left: 0; z-index: 100; width: 76px; height: 76px; border-radius: 50%; background: #edebe6; color: #131211; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; pointer-events: none; opacity: 0; transform: translate(-50%, -50%) scale(0.4); transition: opacity 0.25s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1); mix-blend-mode: difference;">View</div>
 
-  <div style="position: relative; z-index: 1;">
+  <main style="position: relative; z-index: 1;">
 
   <!-- ============ NAV ============ -->
   <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; display: flex; justify-content: space-between; gap: clamp(24px, 6vw, 80px); align-items: flex-start; flex-wrap: wrap; padding: 20px clamp(16px, 3vw, 32px); font-size: 12px; background: linear-gradient(#edebe6f2, #edebe600); pointer-events: none;">
@@ -173,11 +177,11 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
   <section id="about" style="padding: 100px clamp(16px, 4vw, 32px); max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="About">
     <div style="border-top: 1px solid #131211; padding-top: 12px; margin-bottom: 90px;">
       <div style="font-size: 13px; font-weight: 500;">About</div>
-      <div style="font-size: 11px; color: #8a877f;">Who he is</div>
+      <div style="font-size: 11px; color: #66635d;">Who he is</div>
     </div>
 
     <div style="font-size: 13px; font-weight: 500; margin-bottom: 6px;">Core Message</div>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 28px;">One sentence to remember</div>
+    <div style="font-size: 11px; color: #66635d; margin-bottom: 28px;">One sentence to remember</div>
     <h2 style="margin: 0 0 56px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.12; letter-spacing: 0.005em; max-width: 900px;">Applied AI,<br>built to be used.</h2>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px 48px; max-width: 900px; margin-bottom: 110px;">
@@ -187,7 +191,7 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
 
     <!-- Core Values -->
     <div style="font-size: 13px; font-weight: 500; margin-bottom: 6px;">Core Values</div>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 28px;">What he stands for</div>
+    <div style="font-size: 11px; color: #66635d; margin-bottom: 28px;">What he stands for</div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 110px;">
       <sc-for list="{{ values }}" as="v" hint-placeholder-count="4">
         <div data-reveal="true" style="{{ v.wrapStyle }}">
@@ -200,7 +204,7 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
               <span style="font-family: monospace; font-size: 10px; color: #edebe6; border: 1px solid #edebe6; padding: 4px 10px;">{{ v.img }}</span>
             </sc-if>
           </div>
-          <div style="font-size: 12px; color: #8a877f; margin-bottom: 6px;">{{ v.num }}</div>
+          <div style="font-size: 12px; color: #66635d; margin-bottom: 6px;">{{ v.num }}</div>
           <div style="font-size: 14px; font-weight: 600; line-height: 1.4;">{{ v.title }}</div>
         </div>
       </sc-for>
@@ -220,7 +224,7 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
   <!-- ============ THE STORY (2x2 grid) ============ -->
   <section id="story" style="padding: 100px clamp(16px, 4vw, 32px); max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="Story">
     <h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(48px, 7.5vw, 110px); line-height: 1; text-transform: uppercase;">The Story</h2>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 64px;">Four chapters</div>
+    <div style="font-size: 11px; color: #66635d; margin-bottom: 64px;">Four chapters</div>
 
     <div class="storygrid" style="border-top: 1px solid #131211;">
       <sc-for list="{{ chapters }}" as="ch" hint-placeholder-count="4">
@@ -228,7 +232,7 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
           <div style="font-family: 'Libre Caslon Display', serif; font-size: 32px; margin-bottom: 20px;">{{ ch.num }}</div>
           <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 24px; flex-wrap: wrap;">
             <h3 style="margin: 0; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: 30px;">{{ ch.title }}</h3>
-            <span style="font-size: 11px; color: #8a877f;">{{ ch.period }}</span>
+            <span style="font-size: 11px; color: #66635d;">{{ ch.period }}</span>
           </div>
           <div style="display: flex; flex-direction: column; gap: 18px;">
             <sc-for list="{{ ch.points }}" as="pt" hint-placeholder-count="3">
@@ -246,7 +250,7 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
   <!-- ============ WORKS ============ -->
   <section id="works" style="padding: 100px clamp(16px, 4vw, 32px); max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="Works">
     <h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(48px, 7.5vw, 110px); line-height: 1; text-transform: uppercase;">Works</h2>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 48px;">AI &amp; machine learning projects</div>
+    <div style="font-size: 11px; color: #66635d; margin-bottom: 48px;">AI &amp; machine learning projects</div>
 
     <div style="display: flex; flex-wrap: wrap; gap: 14px clamp(16px, 3vw, 32px); margin-bottom: 40px; border-bottom: 1px solid #c8c5bd; padding-bottom: 14px;">
       <sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
@@ -260,7 +264,7 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
           <div style="overflow: hidden; margin-bottom: 8px; background: #23211e; aspect-ratio: 16 / 10;">
             <div role="img" aria-label="{{ w.title }}" style="{{ w.imgStyle }}" style-hover="transform: scale(1.24); filter: brightness(1.12);"></div>
           </div>
-          <div style="font-size: 10px; color: #8a877f; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.06em;">{{ w.tag }}</div>
+          <div style="font-size: 10px; color: #66635d; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.06em;">{{ w.tag }}</div>
           <div style="font-size: 12px; font-weight: 500; line-height: 1.5;">{{ w.title }}</div>
           <div style="font-size: 11px; line-height: 1.6; color: #55534e; margin-top: 3px;">{{ w.desc }}</div>
         </div>
@@ -283,14 +287,14 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
   <!-- ============ PRINCIPLES (4 columns) ============ -->
   <section id="principles" style="padding: 100px clamp(16px, 4vw, 32px); max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="Principles">
     <h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(48px, 7.5vw, 110px); line-height: 1; text-transform: uppercase;">Principles</h2>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 64px;">How he lives &amp; works</div>
+    <div style="font-size: 11px; color: #66635d; margin-bottom: 64px;">How he lives &amp; works</div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; border-top: 1px solid #131211; padding-top: 32px;">
       <sc-for list="{{ principles }}" as="p" hint-placeholder-count="4">
         <div>
           <h3 style="margin: 0 0 4px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: 24px;">{{ p.title }}</h3>
-          <div style="font-size: 11px; color: #8a877f; margin-bottom: 20px;">{{ p.sub }}</div>
-          <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #8a877f; margin-bottom: 8px;">In practice:</div>
+          <div style="font-size: 11px; color: #66635d; margin-bottom: 20px;">{{ p.sub }}</div>
+          <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #66635d; margin-bottom: 8px;">In practice:</div>
           <ul style="margin: 0; padding: 0 0 0 16px; display: flex; flex-direction: column; gap: 8px; font-size: 12px; line-height: 1.6; color: #55534e;">
             <sc-for list="{{ p.points }}" as="pp" hint-placeholder-count="3">
               <li>{{ pp }}</li>
@@ -304,14 +308,14 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
   <!-- ============ PEOPLE (diagram) ============ -->
   <section id="people" style="padding: 100px clamp(16px, 4vw, 32px); max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="People">
     <h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(48px, 7.5vw, 110px); line-height: 1; text-transform: uppercase;">People</h2>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 40px;">The ones who shaped the story</div>
+    <div style="font-size: 11px; color: #66635d; margin-bottom: 40px;">The ones who shaped the story</div>
 
     <p style="margin: 0 auto 64px; max-width: 560px; text-align: center; font-size: 13px; line-height: 1.8;">No engineer ships alone. Behind the projects and the community sits a wider circle: mentors, collaborators, and the AI Innovation Society team that makes each event happen.</p>
 
     <div style="display: flex; flex-direction: column; align-items: center; gap: 0;">
       <div style="width: 128px; height: 128px; border-radius: 50%; border: 1px solid #131211; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;">
         <div style="font-family: 'Libre Caslon Display', serif; font-size: 16px;">Sudais</div>
-        <div style="font-size: 9px; color: #8a877f;">the author</div>
+        <div style="font-size: 9px; color: #66635d;">the author</div>
       </div>
       <div style="width: 1px; height: 48px; background: #131211;"></div>
       <div style="width: min(760px, 100%); height: 1px; background: #131211;"></div>
@@ -326,36 +330,36 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
   <!-- ============ JOURNAL (blog teaser) ============ -->
   <section id="journal" style="padding: 100px clamp(16px, 4vw, 32px); max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="Journal">
     <h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(48px, 7.5vw, 110px); line-height: 1; text-transform: uppercase;">Journal</h2>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 64px;">Essays on AI engineering &amp; shipping</div>
+    <div style="font-size: 11px; color: #66635d; margin-bottom: 64px;">Essays on AI engineering &amp; shipping</div>
 
     <div style="border-top: 1px solid #131211;">
       <a class="jrow" href="blog/microsoft-build-localhost-islamabad.html" style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap; padding: 28px 0; border-bottom: 1px solid #c8c5bd; color: #131211; text-decoration: none;">
         <span style="display: flex; align-items: baseline; gap: 24px; flex-wrap: wrap;">
-          <span style="font-size: 11px; color: #8a877f; min-width: 90px;">Jul 11, 2026</span>
+          <span style="font-size: 11px; color: #66635d; min-width: 90px;">Jul 11, 2026</span>
           <span class="jtitle" style="font-family: 'Libre Caslon Display', serif; font-size: clamp(22px, 3vw, 34px); line-height: 1.2;">Microsoft Build // localhost: Islamabad</span>
         </span>
-        <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #8a877f;">Events ↗</span>
+        <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #66635d;">Events ↗</span>
       </a>
       <a class="jrow" href="blog/build-something-real.html" style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap; padding: 28px 0; border-bottom: 1px solid #c8c5bd; color: #131211; text-decoration: none;">
         <span style="display: flex; align-items: baseline; gap: 24px; flex-wrap: wrap;">
-          <span style="font-size: 11px; color: #8a877f; min-width: 90px;">Jul 8, 2026</span>
+          <span style="font-size: 11px; color: #66635d; min-width: 90px;">Jul 8, 2026</span>
           <span class="jtitle" style="font-family: 'Libre Caslon Display', serif; font-size: clamp(22px, 3vw, 34px); line-height: 1.2;">Build Something Real: A Letter to FYP Students</span>
         </span>
-        <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #8a877f;">Students ↗</span>
+        <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #66635d;">Students ↗</span>
       </a>
       <a class="jrow" href="blog/stepping-back-to-move-forward.html" style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap; padding: 28px 0; border-bottom: 1px solid #c8c5bd; color: #131211; text-decoration: none;">
         <span style="display: flex; align-items: baseline; gap: 24px; flex-wrap: wrap;">
-          <span style="font-size: 11px; color: #8a877f; min-width: 90px;">Jul 7, 2026</span>
+          <span style="font-size: 11px; color: #66635d; min-width: 90px;">Jul 7, 2026</span>
           <span class="jtitle" style="font-family: 'Libre Caslon Display', serif; font-size: clamp(22px, 3vw, 34px); line-height: 1.2;">Stepping Back to Move Forward</span>
         </span>
-        <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #8a877f;">Reflection ↗</span>
+        <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #66635d;">Reflection ↗</span>
       </a>
       <a class="jrow" href="blog/vibe-ship.html" style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap; padding: 28px 0; border-bottom: 1px solid #c8c5bd; color: #131211; text-decoration: none;">
         <span style="display: flex; align-items: baseline; gap: 24px; flex-wrap: wrap;">
-          <span style="font-size: 11px; color: #8a877f; min-width: 90px;">Jul 6, 2026</span>
+          <span style="font-size: 11px; color: #66635d; min-width: 90px;">Jul 6, 2026</span>
           <span class="jtitle" style="font-family: 'Libre Caslon Display', serif; font-size: clamp(22px, 3vw, 34px); line-height: 1.2;">vibe-ship: Your Code Works. Now Actually Ship It.</span>
         </span>
-        <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #8a877f;">Tooling ↗</span>
+        <span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #66635d;">Tooling ↗</span>
       </a>
     </div>
 
@@ -367,14 +371,14 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
   <!-- ============ CONTACT ============ -->
   <section id="contact" style="padding: 100px clamp(16px, 4vw, 32px) 0; max-width: 1440px; margin: 0 auto; box-sizing: border-box;" data-screen-label="Contact">
     <h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Display', serif; font-weight: 400; font-size: clamp(48px, 7.5vw, 110px); line-height: 1; text-transform: uppercase;">Contact</h2>
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 56px;">Say hello</div>
+    <div style="font-size: 11px; color: #66635d; margin-bottom: 56px;">Say hello</div>
 
     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; max-width: 900px; margin-bottom: 90px; flex-wrap: wrap;">
       <p style="margin: 0; font-size: 14px; line-height: 1.8; max-width: 420px;">Please feel free to reach out for anything: a hello, a question, a collaboration, or just to talk about the story.</p>
       <button onClick="{{ copyEmail }}" style="font-family: 'Archivo', sans-serif; font-size: 12px; background: none; border: 1px solid #131211; color: #131211; border-radius: 999px; padding: 10px 24px; cursor: pointer; white-space: nowrap;" style-hover="background: #131211; color: #edebe6;">{{ copyLabel }}</button>
     </div>
 
-    <div style="font-size: 11px; color: #8a877f; margin-bottom: 8px;">Email</div>
+    <div style="font-size: 11px; color: #66635d; margin-bottom: 8px;">Email</div>
     <a href="mailto:msudaiskhalid.ai@gmail.com" style="display: block; color: #131211; text-decoration: none; font-family: 'Libre Caslon Display', serif; font-size: clamp(28px, 5.6vw, 84px); line-height: 1.05; letter-spacing: 0.01em; margin-bottom: 100px; overflow-wrap: anywhere;">msudaiskhalid.ai@gmail.com</a>
 
     <footer style="border-top: 1px solid #131211; padding: 32px 0 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 40px; font-size: 12px;">
@@ -383,21 +387,21 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
         <div style="color: #55534e; line-height: 1.8;">AI/ML Engineer &amp; Community Builder<br>Islamabad, Pakistan</div>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px;">
-        <div style="color: #8a877f; margin-bottom: 4px;">Sitemap</div>
+        <div style="color: #66635d; margin-bottom: 4px;">Sitemap</div>
         <a href="#top" style="color: #131211; text-decoration: none;">Home</a>
         <a href="#about" style="color: #131211; text-decoration: none;">About</a>
         <a href="#story" style="color: #131211; text-decoration: none;">Story</a>
         <a href="#works" style="color: #131211; text-decoration: none;">Works</a>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px;">
-        <div style="color: #8a877f; margin-bottom: 4px;">&nbsp;</div>
+        <div style="color: #66635d; margin-bottom: 4px;">&nbsp;</div>
         <a href="#principles" style="color: #131211; text-decoration: none;">Principles</a>
         <a href="#people" style="color: #131211; text-decoration: none;">People</a>
         <a href="blog.html" style="color: #131211; text-decoration: none;">Journal</a>
         <a href="#contact" style="color: #131211; text-decoration: none;">Contact</a>
       </div>
       <div style="display: flex; flex-direction: column; gap: 8px;">
-        <div style="color: #8a877f; margin-bottom: 4px;">Social</div>
+        <div style="color: #66635d; margin-bottom: 4px;">Social</div>
         <a href="https://www.linkedin.com/in/sudais-khalid/" target="_blank" rel="noopener" style="color: #131211; text-decoration: none;">LinkedIn</a>
         <a href="https://github.com/sudais-khalid" target="_blank" rel="noopener" style="color: #131211; text-decoration: none;">GitHub</a>
         <a href="http://instagram.com/sudais.aie/" target="_blank" rel="noopener" style="color: #131211; text-decoration: none;">Instagram</a>
@@ -405,13 +409,13 @@ src="https://www.facebook.com/tr?id=1058056280503226&ev=PageView&noscript=1"
         <a href="https://wa.me/923185133092" target="_blank" rel="noopener" style="color: #131211; text-decoration: none;">WhatsApp</a>
       </div>
     </footer>
-    <div style="display: flex; justify-content: space-between; padding: 0 0 24px; font-size: 11px; color: #8a877f;">
+    <div style="display: flex; justify-content: space-between; padding: 0 0 24px; font-size: 11px; color: #66635d;">
       <span>© 2026 Sudais Khalid</span>
       <a href="#top" style="color: #131211; text-decoration: none;">Back to top ↑</a>
     </div>
   </section>
 
-  </div>
+  </main>
 
 </div>
 </x-dc>
@@ -635,7 +639,7 @@ class Component extends DCLogic {
           borderBottom: active ? '2px solid #131211' : '2px solid transparent',
           cursor: 'pointer',
           background: 'none',
-          color: active ? '#131211' : '#8a877f'
+          color: active ? '#131211' : '#66635d'
         }
       };
     });

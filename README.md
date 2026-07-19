@@ -2,7 +2,7 @@
 
 The personal portfolio and story site of **Sudais Khalid** — AI & ML Engineer and Community Builder (Islamabad, Pakistan). Machine learning, deep learning, computer vision, and NLP, plus the AI Innovation Society.
 
-**Live site:** [sudais-khalid.github.io/Personal-AI-Portfolio-Website](https://sudais-khalid.github.io/Personal-AI-Portfolio-Website/)
+**Live site:** [sudaiskhalid.com](https://sudaiskhalid.com/)
 
 ## Tech
 - Single-page static site (HTML + JS), hosted on GitHub Pages
