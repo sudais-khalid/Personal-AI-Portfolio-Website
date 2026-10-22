@@ -9,6 +9,10 @@ const url = require("url");
 const ROOT = __dirname;
 const PORT = process.env.PORT || 5173;
 
+const REDIRECTS = {
+    "/lumen": "/vibe-ship",
+};
+
 const MIME = {
     ".html": "text/html; charset=utf-8",
     ".js": "text/javascript; charset=utf-8",
@@ -52,6 +56,11 @@ function tryReadFile(filePath) {
 const server = http.createServer(async (req, res) => {
     let pathname = decodeURIComponent(url.parse(req.url).pathname);
     if (pathname === "/") pathname = "/index.html";
+
+    // Mirrors vercel.json "redirects".
+    if (REDIRECTS[pathname]) {
+        return send(res, 301, "", { Location: REDIRECTS[pathname] });
+    }
 
     const direct = safeJoin(ROOT, pathname);
     if (!direct) return send(res, 403, "Forbidden");

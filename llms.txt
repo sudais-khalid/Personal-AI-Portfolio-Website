@@ -1,0 +1,45 @@
+# Sudais Khalid
+
+> Sudais Khalid (Muhammad Sudais Khalid) is an AI/ML engineer, speaker, and community builder from Islamabad, Pakistan. He builds agentic AI and Model Context Protocol (MCP) tooling, computer vision, NLP, and MERN stack products. He created vibe-ship, an open-source Claude Code skill for deployment automation, and is building ProdPilot, an agentic MCP server, as his Final Year Project at Shifa Tameer-e-Millat University (STMU).
+
+Official website: https://sudaiskhalid.com
+Contact: msudaiskhalid.ai@gmail.com
+GitHub: https://github.com/sudais-khalid
+LinkedIn: https://www.linkedin.com/in/sudais-khalid/
+Kaggle: https://www.kaggle.com/sudais-khalid
+
+## Quick facts
+
+- Role: AI & ML engineer, agentic AI and MCP developer, technical speaker and workshop facilitator.
+- Location: Islamabad, Pakistan. Works and speaks in person in Pakistan and online worldwide (US, UK, Europe, Middle East, Asia). Languages: English, Urdu.
+- Education: Final-year B.Sc. Artificial Intelligence, Shifa Tameer-e-Millat University (STMU), CGPA 3.76/4.00.
+- Work: AI/ML Developer at Aditor Agency. AI internships at FlyRank (Machine Learning track) and AiTec (Artificial Intelligence Technology Centre), Islamabad. Former Machine Learning Intern at CodeAlpha.
+- Community: Founder and former President of the AI Innovation Society at STMU. Directed Digital Health Summit 4.0 under ORIC.
+- Recognition: Kaggle Bronze Medal for open Wikipedia datasets. Certifications include Anthropic's Model Context Protocol: Advanced Topics and Google Cloud's Introduction to Large Language Models.
+- Expertise: artificial intelligence, machine learning, deep learning, agentic AI, AI agents, multi-agent systems, Model Context Protocol (MCP), large language models, RAG, computer vision, face recognition, NLP (including Urdu), explainable AI, MLOps, Docker, CI/CD, Claude Code, MERN stack (MongoDB, Express, React, Node.js), FastAPI, Python, PyTorch, TensorFlow.
+
+## Flagship projects
+
+- [vibe-ship](https://sudaiskhalid.com/vibe-ship): Open-source (MIT) Claude Code skill and plugin that generates a complete production-ready deployment setup in one pass: multi-stage non-root Dockerfile, .dockerignore, docker-compose.yml, .env.example, GitHub Actions CI/CD with dependency scanning, and DEPLOYMENT.md. Auto-detects Node, Python, Go, Java/Kotlin, Ruby, Rust, PHP, and static frontends, generates Kubernetes manifests on request, and audits existing Dockerfiles, compose files, and CI pipelines with a static scoring script. Install in Claude Code with `/plugin marketplace add sudais-khalid/vibe-ship` then `/plugin install vibe-ship@vibe-ship`. Source: https://github.com/sudais-khalid/vibe-ship. Listed on ClaudePluginHub (https://www.claudepluginhub.com/plugins/sudais-khalid-vibe-ship) and CodeGuilds (https://codeguilds.dev/packages/vibe-ship).
+- [ProdPilot](https://sudaiskhalid.com/prodpilot): Sudais Khalid's Final Year Project. A local MCP server that audits, fixes, verifies, and deploys vibe-coded Node.js/Express and React/Vite apps through a five-layer agentic pipeline: Detection and Blueprint, Audit Engine, Bounded Agentic Loop, Scoring Gate, and ProdPush deployment. Built with two teammates; Sudais owns the ProdPush deployment layer. Also his AiTec internship project, with a research paper in progress. Source: https://github.com/prodpilotai/ProdPilot.
+
+## More projects
+
+- [FaceFind](https://sudaiskhalid.com/facefind): Privacy-first face recognition for event photos. YuNet detection, ArcFace ResNet-100 (ONNX) embeddings, FAISS vector search, FastAPI, PostgreSQL, Redis, React. AES-256-GCM encrypted embeddings, deployed on Azure with Docker Compose and GitHub Actions. Source: https://github.com/sudais-khalid/FaceFind.
+- [NoteSync](https://sudaiskhalid.com/notesync): MERN stack app that turns live lectures in English, Urdu, or both into annotated transcripts and study notes with a classical NLP pipeline built from scratch. Live: https://note-sync-xi.vercel.app. Source: https://github.com/sudais-khalid/NoteSync.
+- PRISM: No-code automated ML platform with explainable AI (SHAP, LIME, Grad-CAM), 40+ models, and OpenMP/MPI parallel compute. Source: https://github.com/sudais-khalid/PRISM.
+- Vouchcode: Local-first cryptographic provenance and comprehension verification for AI-assisted development, built for AI Builders Hackathon 2026. Source: https://github.com/sudais-khalid/vouchcode.
+- Tabula: Agent-native data studio built on WebMCP, where the agent's tool surface changes with the data. Source: https://github.com/sudais-khalid/WebMCP.
+
+## Speaking
+
+- [Speaking](https://sudaiskhalid.com/speaking): Available for seminars, conferences, university workshops, guest lectures, hackathons, and developer meetups, in English or Urdu, in person or online.
+- Talk tracks: Agentic AI, AI agents and multi-agent systems with MCP; From vibe coding to production with Docker, CI/CD and security; Applied computer vision and NLP on real-world data; MERN stack meets machine learning (hands-on workshop).
+- To book a talk, email msudaiskhalid.ai@gmail.com.
+
+## Pages
+
+- [Home](https://sudaiskhalid.com/)
+- [About](https://sudaiskhalid.com/about): Background, education, experience, and values.
+- [Work](https://sudaiskhalid.com/work): All selected projects.
+- [Principles](https://sudaiskhalid.com/principles): Honesty, craft, patience, curiosity.

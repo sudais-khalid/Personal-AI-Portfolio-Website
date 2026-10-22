@@ -1,0 +1,13 @@
+{
+    "name": "Sudais Khalid | AI & ML Engineer",
+    "short_name": "Sudais Khalid",
+    "description": "AI/ML engineer and speaker building agentic AI, MCP, computer vision, NLP and MERN stack products.",
+    "start_url": "/",
+    "display": "browser",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+        { "src": "/assets/images/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+        { "src": "/assets/images/favicon-180.png", "sizes": "180x180", "type": "image/png" }
+    ]
+}

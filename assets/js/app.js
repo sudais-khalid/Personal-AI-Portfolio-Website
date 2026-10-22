@@ -1515,16 +1515,16 @@
         const cases = [{
                 title: "VIBE-SHIP",
                 number: "01",
-                desc: "A published Claude Code skill that turns hours of DevOps busywork into one command: Docker, CI/CD, and security auditing, done.",
+                desc: "An open-source Claude Code skill that turns hours of DevOps busywork into one command: Docker, CI/CD, and security auditing, done.",
                 year: "2026",
                 services: ["Tooling", "DevOps", "Automation"],
             },
             {
-                title: "NoteSync",
+                title: "PRODPILOT",
                 number: "02",
-                desc: "An AI-powered lecture note-taking app that catches every word in real time, in Urdu and English, so nothing gets lost.",
+                desc: "His Final Year Project: an agentic MCP server that audits, fixes, verifies, and deploys vibe-coded apps until they are production ready.",
                 year: "2026",
-                services: ["AI Products", "NLP", "Mobile"],
+                services: ["Agentic AI", "MCP", "FYP"],
             },
             {
                 title: "FaceFind",
@@ -2860,6 +2860,45 @@
         return tl;
     }
 
+    // Pages that reuse another page's namespace for its animations (e.g. speaking
+    // uses "services") declare which nav link they belong to via data-nav-key.
+    function navKey(container) {
+        return container ?.dataset ?.navKey || container ?.dataset ?.barbaNamespace;
+    }
+
+    // Barba only swaps the container, so carry the next page's title, meta
+    // description, canonical and structured data across the transition.
+    function syncHead(html) {
+        if (!html) return;
+        const next = new DOMParser().parseFromString(html, "text/html");
+
+        document.title = next.title;
+
+        const selectors = [
+            'meta[name="description"]',
+            'link[rel="canonical"]',
+            'meta[property="og:url"]',
+            'meta[property="og:title"]',
+            'meta[property="og:description"]',
+            'meta[property="og:image"]',
+        ];
+        selectors.forEach((sel) => {
+            const from = next.head.querySelector(sel);
+            const to = document.head.querySelector(sel);
+            if (!from || !to) return;
+            const attr = sel.startsWith("link") ? "href" : "content";
+            to.setAttribute(attr, from.getAttribute(attr));
+        });
+
+        document.head.querySelectorAll('script[type="application/ld+json"]').forEach((el) => el.remove());
+        next.head.querySelectorAll('script[type="application/ld+json"]').forEach((el) => {
+            const script = document.createElement("script");
+            script.type = "application/ld+json";
+            script.textContent = el.textContent;
+            document.head.appendChild(script);
+        });
+    }
+
     function applyNavState(namespace) {
         const nav = document.querySelector("[data-navbar]");
         if (!nav) return;
@@ -2916,12 +2955,11 @@
         initPersistentUI();
         bindNavClickWithTransition();
 
-        applyNavState(
-            document.querySelector('[data-barba="container"]') ?.dataset ?.barbaNamespace
-        );
+        applyNavState(navKey(document.querySelector('[data-barba="container"]')));
 
         barba.hooks.afterEnter((data) => {
-            applyNavState(data.next.namespace);
+            applyNavState(navKey(data.next.container));
+            syncHead(data.next.html);
         });
 
         barba.hooks.after(() => {
@@ -2941,7 +2979,7 @@
                 name: "default",
 
                 async once(data) {
-                    setNavCurrent(data.next.namespace);
+                    setNavCurrent(navKey(data.next.container));
                     const next = data.next.container;
                     const namespace = data.next.namespace;
 
@@ -2974,7 +3012,7 @@
                 async leave(data) {
                     scrollStop();
                     setNavTransitionMode(true);
-                    setNavCurrent(data.current.namespace);
+                    setNavCurrent(navKey(data.current.container));
 
                     leavePromise = (async () => {
                         await transitionCover(data.current.container);
@@ -2997,7 +3035,7 @@
                 },
 
                 async enter(data) {
-                    setNavCurrent(data.next.namespace);
+                    setNavCurrent(navKey(data.next.container));
                     await leavePromise;
                     await document.fonts.ready;
                     const next = data.next.container;

@@ -1,33 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://sudaiskhalid.com/</loc>
-        <lastmod>2026-07-30</lastmod>
+        <lastmod>2026-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://sudaiskhalid.com/assets/images/og-image.jpg</image:loc>
+            <image:title>Sudais Khalid, AI and ML engineer and speaker</image:title>
+        </image:image>
     </url>
     <url>
-        <loc>https://sudaiskhalid.com/work</loc>
-        <lastmod>2026-07-30</lastmod>
+        <loc>https://sudaiskhalid.com/vibe-ship</loc>
+        <lastmod>2026-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://sudaiskhalid.com/assets/images/og-vibe-ship.jpg</image:loc>
+            <image:title>vibe-ship, open-source Claude Code skill for Docker, CI/CD and deployment</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sudaiskhalid.com/prodpilot</loc>
+        <lastmod>2026-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://sudaiskhalid.com/assets/images/og-prodpilot.jpg</image:loc>
+            <image:title>ProdPilot, agentic MCP server for vibe-coded apps, Final Year Project</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sudaiskhalid.com/speaking</loc>
+        <lastmod>2026-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://sudaiskhalid.com/assets/images/og-speaking.jpg</image:loc>
+            <image:title>Sudais Khalid, AI speaker for seminars and workshops</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sudaiskhalid.com/about</loc>
+        <lastmod>2026-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://sudaiskhalid.com/lumen</loc>
-        <lastmod>2026-07-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sudaiskhalid.com/principles</loc>
-        <lastmod>2026-07-30</lastmod>
+        <loc>https://sudaiskhalid.com/work</loc>
+        <lastmod>2026-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://sudaiskhalid.com/about</loc>
-        <lastmod>2026-07-30</lastmod>
+        <loc>https://sudaiskhalid.com/facefind</loc>
+        <lastmod>2026-10-22</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://sudaiskhalid.com/assets/images/og-facefind.jpg</image:loc>
+            <image:title>FaceFind, face recognition event photo retrieval</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sudaiskhalid.com/notesync</loc>
+        <lastmod>2026-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://sudaiskhalid.com/assets/images/og-notesync.jpg</image:loc>
+            <image:title>NoteSync, MERN lecture transcription with NLP</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sudaiskhalid.com/principles</loc>
+        <lastmod>2026-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
 </urlset>
